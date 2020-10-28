@@ -36,6 +36,9 @@ function setup(){
 
     bird = new Bird(100,100);
 
+    log6=new Log(200,100,70,PI/2);
+    sling1=new Chain(bird.body, log6.body)
+
 }
 
 function draw(){
@@ -58,6 +61,8 @@ function draw(){
     box5.display();
     log4.display();
     log5.display();
+    log6.display();
+    sling1.display();
 
     bird.display();
     platform.display();
